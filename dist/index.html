@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <style>
+        * {
+            font-family: "Syne", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-bodyColor">
+    <header id="Home" class="sticky top-0 left-0 z-50">
+        <nav class="flex items-center justify-between px-[4vw] py-[1vw]">
+            <div class="portfolio">
+                <h1 class="text-mainColog text-[5vw] lg:text-mainColor sm:text-mainColor lg:text-[2vw] font-bold">
+                    Portfolio.</h1>
+            </div>
+            <div class="navMenus">
+                <ul
+                    class="navMenus z-10 lg:z-10 ul hidden lg:flex text-[4vw] gap-[1.3vw] px-[4vw] ml-[-100vw] lg:ml-0 lg:h-auto h-[100vh]  lg:static absolute left-0 bg-mainColor w-full text-left lg:bg-transparent text-white lg:text-black top-[0] lg:flex-row flex-col lg:text-[1.3vw] font-semibold">
+                    <li class="lg
+                  hover:opacity-50 hover:text-black lg:hover:text-mainColor text-[5vw] lg:text-[1.3vw] mt-[10vw] lg:mt-[0]"><a
+                            href="#home">Home</a></li>
+                    <hr class="lg:hidden mt-[1vw]">
+                    <li class="lg
+                  hover:opacity-50 hover:text-black lg:hover:text-mainColor text-[5vw] lg:text-[1.3vw] mt-[10vw] lg:mt-[0]"><a
+                            href="#about">About</a></li>
+                    <hr class="lg:hidden mt-[1vw]">
+                    <li class="lg
+                  hover:opacity-50 hover:text-black lg:hover:text-mainColor text-[5vw] lg:text-[1.3vw] mt-[10vw] lg:mt-[0]"><a
+                            href="#services">Services</a></li>
+                    <hr class="lg:hidden mt-[1vw]">
+                    <li class="lg
+                  hover:opacity-50 hover:text-black lg:hover:text-mainColor text-[5vw] lg:text-[1.3vw] mt-[10vw] lg:mt-[0]"><a
+                            href="#portfolio">Portfolio</a></li>
+                    <hr class="lg:hidden mt-[1vw]">
+                    <li class="lg
+                  hover:opacity-50 hover:text-black lg:hover:text-mainColor text-[5vw] lg:text-[1.3vw] mt-[10vw] lg:mt-[0]"><a
+                            href="#contact">Contact</a></li>
+                    <hr class="lg:hidden mt-[1vw]">
+                </ul>
+                <ul class="visible flex z-50 lg:hidden mr-[2vw]">
+                    <li class="open text-[7vw] text-black z-40"><i class='bx bx-menu'></i></li>
+                    <li class="close hidden text-[7vw] text-black z-40"><i class='bx bx-x'></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home"
+        class="main flex flex-col mt-[5vw] lg:mt-[-2vw] sm:flex-col text-[10vw] lg:text-[3vw] lg:flex-row items-center justify-between px-[8vw] py-[8vw]">
+        <div class="leftSection text-center sm:text-center lg:text-center xl:text-left font-bold">
+            <h2 class="mySelf text-[7vw] lg:text-[3vw] text-mainColor">Hey, i am</h2>
+            <h1 class="text-[8vw] lg:text-[5vw] leading-[8vw] lg:leading-[4.5vw]">Usman<br>Web Developer</h1>
+            <h3 class="text-mainColor text-[5vw] lg:text-[2vw] mt-[1vw]">Web Developer <span class="text-black">|</span>
+                Based in
+                pakistan</h3>
+
+            <div
+                class="socialMedia flex items-center sm:justify-center lg:justify-center xl:justify-start justify-center text-[4vw] font-sans bg-transparent gap-[1vw] mt-[1vw]">
+                <p
+                    class="lg:text-[2vw] flex items-center justify-center bg-transparent border-2 border-mainColor p-[2vw] lg:p-[0.5vw] rounded-full text-[5vw] hover:bg-mainColor hover:text-white">
+                    <i class='lg:text-[2vw] text-[5.5vw] bx bxl-facebook-circle'></i>
+                </p>
+                <p
+                    class="lg:text-[2vw] flex items-center justify-center bg-transparent border-2 border-mainColor p-[2vw] lg:p-[0.5vw] rounded-full text-[5vw] hover:bg-mainColor hover:text-white">
+                    <i class='lg:text-[2vw] text-[5.5vw] bx bxl-twitter'></i>
+                </p>
+                <p
+                    class="lg:text-[2vw] flex items-center justify-center bg-transparent border-2 border-mainColor p-[2vw] lg:p-[0.5vw] rounded-full text-[5vw] hover:bg-mainColor hover:text-white">
+                    <i class='lg:text-[2vw] text-[5.5vw] bx bxl-instagram-alt'></i>
+                </p>
+                <p
+                    class="lg:text-[2vw] flex items-center justify-center bg-transparent border-2 border-mainColor p-[2vw] lg:p-[0.5vw] rounded-full text-[5vw] hover:bg-mainColor hover:text-white">
+                    <i class='lg:text-[2vw] text-[5.5vw] bx bxl-linkedin-square'></i>
+                </p>
+            </div>
+
+
+            <button
+                class="btn  bg-mainColor text-[4vw] lg:text-[1.3vw] text-white p-[1vw] border-2 px-[2vw] border-mainColor hover:bg-transparent hover:text-black rounded-[1vw] mt-[0.1vw] lg:mt-[1.5vw]">Download
+                CV</button>
+        </div>
+        <div class="rightSection">
+            <img class="hidden w-[30vw] rounded-full h-[65vh] hover:shadow-lg hover:shadow-mainColor object-cover"
+                src="images/mainPhoto.jpg" alt="">
+            <img class="xl:block hidden w-[30vw] rounded-full h-[65vh] hover:shadow-lg hover:shadow-mainColor object-cover"
+                src="images/mainPhoto.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="About flex-col lg:flex-row flex items-center justify-between px-[15vw] mt-[5vw]">
+        <div class="left">
+            <img src="images/secondMainPhoto.jpg"
+                class="lg:h-[70vh] sm:h-[60vh] h-[50vh] w-[65vw] rounded-[2vw] lg:w-[100vw] object-cover lg:rounded-[1vw]"
+                alt="">
+        </div>
+        <div class="right ml-[5vw] text-center lg:text-left mt-[5vw] lg:mt-[0]">
+            <h6 class="lg:text-[3vw] text-[8vw] font-bold">About <span class="text-mainColor">Me</span></h1>
+                <h6 class="font-bold text-[4vw] lg:text-[1.5vw]">Hey, I'am Here To Help your Next Project</h3>
+                    <p class="para text-grey-900 mt-[1vw] text-[4vw] lg:text-[1vw] ">Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Sint vitae totam
+                        ea possimus quae hic molestias, minima neque laudantium illum quam facilis nihil quibusdam
+                        dignissimos
+                        nesciunt, tempora ratione necessitatibus officia.
+                    </p>
+                    <button
+                        class="bg-mainColor button text-[4vw] lg:text-[1vw] text-white p-[0.8vw] border-2 px-[2vw] font-bold border-mainColor hover:bg-transparent hover:text-black rounded-[1vw] mt-[2vw]">Read
+                        More</button>
+        </div>
+    </section>
+
+    <section id="services" class="Services mt-[10vw] px-[4vw]">
+        <h1 class="text-center font-bold text-[8vw] lg:text-[3vw]">My<span class="text-mainColor"> Services</span></h1>
+        <div class="serviceCard grid grid-cols-1 lg:grid-cols-3 mt-[5vw] gap-[3vw]">
+            <div
+                class="card border-t-4 border-t-mainColor text-center border-b-4 border-b-mainColor border-mainColor w-[80vw]  ml-[6vw] lg:ml-[0] lg:w-[28vw]  px-[2vw] h-[40vh] lg:h-[60vh] py-[2.8vw] rounded-[1.5vw]">
+                <p class="text-center text-[9vw] lg:text-[5vw] text-mainColor"><i class='bx bx-code-alt'></i></p>
+                <h1 class="font-bold text-[6vw] lg:text-[2vw]">Web Development</h1>
+                <p class="text-[3vw] lg:text-[1.2vw] text-gray-500 font-semibold">Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing elit. Quis incidunt quasi excepturi ducimus
+                    consequuntur. Laudantium.</p>
+                <button
+                    class="bg-mainColor text-white p-[0.8vw] border-2 px-[2vw] font-bold border-mainColor hover:bg-transparent hover:text-black rounded-[1vw] mt-[1.5vw]">Read
+                    More</button>
+            </div>
+
+            <div
+                class="card border-t-4 border-t-mainColor text-center border-b-4 border-b-mainColor border-mainColor w-[80vw] ml-[6vw] lg:ml-[0] lg:w-[28vw]  px-[2vw] h-[40vh] lg:h-[60vh] pt-[-1vw] py-[2.8vw] rounded-[1.5vw]">
+                <p class="text-center text-[9vw] lg:text-[5vw] text-mainColor"><i class='bx bxs-edit-alt'></i></i></p>
+                <h1 class="font-bold text-[6vw] lg:text-[2vw]">Web Designing</h1>
+                <p class="text-[3vw] lg:text-[1.2vw] text-gray-500 font-semibold">Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing elit. Quis incidunt quasi excepturi ducimus
+                    consequuntur. Laudantium.</p>
+                <button
+                    class="bg-mainColor text-white p-[0.8vw] border-2 px-[2vw] font-bold border-mainColor hover:bg-transparent hover:text-black rounded-[1vw] mt-[1.5vw]">Read
+                    More</button>
+            </div>
+
+            <div
+                class="card border-t-4 border-t-mainColor text-center border-b-4 border-b-mainColor border-mainColor w-[80vw] ml-[6vw] lg:ml-[0] lg:w-[28vw]  px-[2vw] h-[40vh] lg:h-[60vh] pt-[-1vw] py-[2.8vw] rounded-[1.5vw]">
+                <p class="text-center text-[9vw] lg:text-[5vw] text-mainColor"><i class='bx bx-signal-5'></i></i></p>
+                <h1 class="font-bold text-[6vw] lg:text-[2vw]">Digital Marketing</h1>
+                <p class="text-[3vw] lg:text-[1.2vw] text-gray-500 font-semibold">Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing elit. Quis incidunt quasi excepturi ducimus
+                    consequuntur. Laudantium.</p>
+                <button
+                    class="bg-mainColor text-white p-[0.8vw] border-2 px-[2vw] font-bold border-mainColor hover:bg-transparent hover:text-black rounded-[1vw] mt-[1.5vw]">Read
+                    More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="projects mt-[10vw] px-[4vw]">
+        <h1 class="text-center text-[8vw] font-bold lg:text-[3vw]">Latest<span class="text-mainColor"> Projects</span>
+        </h1>
+
+        <div class="projects flex items-center flex-col lg:grid gap-[2vw] mt-[4vw] grid-cols-1 lg:grid-cols-3">
+
+            <div class="projectsDetail group relative hover:projectsLayer">
+                <img class="lg:w-full w-[80vw] rounded-[2vw] h-[41vh] object-cover lg:h-[40vh] lg:rounded-[1vw]"
+                    src="https://plus.unsplash.com/premium_photo-1681487746049-c39357159f69?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFzc3dvcmR8ZW58MHx8MHx8fDA%3D"
+                    alt="">
+
+                <div
+                    class="projectsLayer transition-all ease-in delay-75  group-hover:opacity-100 flex items-center justify-center flex-col px-[8vw] lg:px-[3vw] h-full absolute left-0 top-0 text-white opacity-0">
+                    <h1 class="font-bold text-[4vw] lg:text-[2vw] text-center">Password Generator</h1>
+                    <p class="font-light text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente, commodi.</p>
+
+                    <div class="projectsLinks flex gap-[1vw] mt-[1vw] text-[4vw] lg:text-[2vw]">
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://glittery-piroshki-53eb84.netlify.app/"><i class='bx bx-link-external'></i></a>
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://github.com/Usmanali960/passwordGenerator.git"><i
+                                class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectsDetail group relative hover:projectsLayer">
+                <img class="lg:w-full w-[80vw] rounded-[2vw] h-[41vh] object-cover lg:h-[40vh] lg:rounded-[1vw]"
+                    src="https://images.unsplash.com/photo-1505769542637-a892c7381a3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1YmJsZSUyMGdhbWV8ZW58MHx8MHx8fDA%3D"
+                    alt="">
+
+                <div
+                    class="projectsLayer transition-all ease-in delay-75  group-hover:opacity-100 flex items-center justify-center flex-col px-[8vw] lg:px-[3vw] h-full absolute left-0 top-0 text-white opacity-0">
+                    <h1 class="font-bold text-[4vw] lg:text-[2vw] text-center">Bubble game</h1>
+                    <p class="font-light text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente, commodi.</p>
+
+                    <div class="projectsLinks flex gap-[1vw] mt-[1vw] text-[4vw] lg:text-[2vw]">
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://merry-taffy-709135.netlify.app/"><i class='bx bx-link-external'></i></a>
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://github.com/Usmanali960/myBubbleGame.git"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectsDetail group relative hover:projectsLayer">
+                <img class="lg:w-full w-[80vw] rounded-[2vw] h-[41vh] object-cover lg:h-[40vh] lg:rounded-[1vw]"
+                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHF1aXp8ZW58MHx8MHx8fDA%3D"
+                    alt="">
+
+                <div
+                    class="projectsLayer transition-all ease-in delay-75  group-hover:opacity-100 flex items-center justify-center flex-col px-[8vw] lg:px-[3vw] h-full absolute left-0 top-0 text-white opacity-0">
+                    <h1 class="font-bold text-[4vw] lg:text-[2vw] text-center">Quiz app</h1>
+                    <p class="font-light text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente, commodi.</p>
+
+                    <div class="projectsLinks flex gap-[1vw] mt-[1vw] text-[4vw] lg:text-[2vw]">
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://unrivaled-longma-20fd08.netlify.app/"><i class='bx bx-link-external'></i></a>
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="https://github.com/Usmanali960/myQuizApp.git"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectsDetail group relative hover:projectsLayer">
+                <img class="lg:w-full w-[80vw] rounded-[2vw] h-[41vh] object-cover lg:h-[40vh] lg:rounded-[1vw]"
+                    src="https://plus.unsplash.com/premium_photo-1723846948081-098b0f364e93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                    alt="">
+
+                <div
+                    class="projectsLayer transition-all ease-in delay-75  group-hover:opacity-100 flex items-center justify-center flex-col px-[8vw] lg:px-[3vw] h-full absolute left-0 top-0 text-white opacity-0">
+                    <h1 class="font-bold text-[4vw] lg:text-[2vw] text-center">Coming soon</h1>
+                    <p class="font-light text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente, commodi.</p>
+
+                    <div class="projectsLinks flex gap-[1vw] mt-[1vw] text-[4vw] lg:text-[2vw]">
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="#"><i class='bx bx-link-external'></i></a>
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="#"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectsDetail group relative hover:projectsLayer">
+                <img class="lg:w-full w-[80vw] rounded-[2vw] h-[41vh] object-cover lg:h-[40vh] lg:rounded-[1vw]"
+                    src="https://plus.unsplash.com/premium_photo-1723846948081-098b0f364e93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                    alt="">
+
+                <div
+                    class="projectsLayer transition-all ease-in delay-75  group-hover:opacity-100 flex items-center justify-center flex-col px-[8vw] lg:px-[3vw] h-full absolute left-0 top-0 text-white opacity-0">
+                    <h1 class="font-bold text-[4vw] lg:text-[2vw] text-center">Coming soon</h1>
+                    <p class="font-light text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente, commodi.</p>
+
+                    <div class="projectsLinks flex gap-[1vw] mt-[1vw] text-[4vw] lg:text-[2vw]">
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="#"><i class='bx bx-link-external'></i></a>
+                        <a class="flex hover:bg-mainColor items-center justify-center bg-white text-black p-[0.5vw] rounded-full"
+                            href="#"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="flex lg:ml-[10vw] justify-center items-center min-h-screen mt-[5vw]">
+        <div class="w-full max-w-3xl p-8">
+            <h2 class="lg:text-[3vw] lg:ml-[-10vw] text-[8vw] font-bold text-gray-800 text-center mb-8">Contact <span
+                    class="text-purple-600">Me</span></h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST"
+                class="m-[8vw]  lg:mt-[5vw] lg:mb-[5vw] lg:ml-[0] lg:space-y-6">
+                <input type="hidden" name="access_key" value="93a3e4ad-e17c-4a6b-ae7b-1675deb41641">
+                <!-- Row 1: Full Name and Email Address -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name"
+                            class="mt-1 block w-full px-[1vw] py-[1vw] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address"
+                            class="mt-1 block w-full px-[1vw] py-[1vw] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                </div>
+
+                <!-- Row 2: Mobile Number and Email Subject -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="number" class="block lg:mt-[0] mt-[1vw] text-sm font-medium text-gray-700">Mobile
+                            Number</label>
+                        <input type="tel" id="number" name="number" placeholder="Mobile Number"
+                            class="mt-1 block w-full px-[1vw] py-[1vw] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Email Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Email Subject"
+                            class="mt-1 block w-full px-[1vw] py-[1vw] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                </div>
+
+                <!-- Row 3: Message -->
+                <div>
+                    <label for="message" class="block lg:mt-[0] mt-[1vw] text-sm font-medium text-gray-700">Your
+                        Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"
+                        class="mt-1 lg:mb-[0] mb-[1vw] block w-full px-[1vw] py-[1vw] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="w-full md:w-1/2 py-2 px-4 bg-mainColor border-2 border-mainColor text-white font-semibold rounded-md hover:bg-transparent hover:text-black focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="w-full h-[10vh] bg-mainColor px-[10vw] flex items-center justify-between">
+        <div class="copyRight">
+            <p class="text-white font-semibold">Copyright &copy; 2023 by codehall | all rights deserved</p>
+        </div>
+        <div class="topIcon">
+            <a href="#home"
+                class="bg-white flex items-center justify-center p-[0.5vw] rounded-full text-[6vw] lg:text-[2vw]"><i
+                    class='bx bxs-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
